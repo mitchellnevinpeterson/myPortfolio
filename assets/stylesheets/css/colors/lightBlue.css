@@ -1,0 +1,289 @@
+/*==========================================*/
+/*           Color Schemes
+/*==========================================*/
+/*==========================================*/
+/*            Global Elements
+/*==========================================*/
+a {
+  color: #418eea;
+}
+a:hover {
+  color: #418eea;
+}
+.section-title .title-icon-container .title-icon {
+  background: #418eea;
+}
+.pagination-wrap .pagination li a {
+  color: #333333;
+}
+.pagination-wrap .pagination li a.active,
+.pagination-wrap .pagination li a:hover {
+  border-color: #418eea;
+  background: #418eea;
+}
+.title h2 {
+  color: #418eea;
+}
+/*==========================================*/
+/*            Navbar Elements
+/*==========================================*/
+.navbar-inverse.scroll-fixed-navbar .navbar-nav li:hover a {
+  color: #418eea;
+}
+.navbar-inverse.scroll-fixed-navbar .navbar-nav li.active a {
+  color: #418eea;
+}
+.navbar-inverse.scroll-fixed-navbar .navbar-nav li.active a:hover {
+  color: #418eea;
+}
+/*==========================================*/
+/*            Banner Elements
+/*==========================================*/
+.banner .banner-content .buttons .def-btn:hover {
+  color: #418eea;
+  border-bottom: 1px solid #418eea;
+}
+/*==========================================*/
+/*              About Elements
+/*==========================================*/
+.about .content .icon i {
+  color: #418eea;
+}
+.about .center .slick-prev,
+.about .center .slick-next {
+  border: 1px solid #418eea;
+}
+.about .center .slick-prev:hover,
+.about .center .slick-next:hover {
+  background: #418eea;
+}
+.about .center .slick-prev:hover:before,
+.about .center .slick-next:hover:before {
+  color: #ffffff;
+}
+.about .center .slick-prev:before {
+  color: #418eea;
+}
+.about .center .slick-next:before {
+  color: #418eea;
+}
+.about .more ul a:hover {
+  color: #418eea;
+}
+/*==========================================*/
+/*             Testimonial Elements
+/*==========================================*/
+.testimonial .carousel .carousel-control .control-circle:hover {
+  border: 1px solid #418eea;
+}
+.testimonial .carousel .carousel-control .control-circle:hover .fa {
+  color: #418eea;
+}
+/*==========================================*/
+/*             Counter Elements
+/*==========================================*/
+.counter h3 {
+  color: #418eea;
+}
+/*==========================================*/
+/*             Portfolio Elements
+/*==========================================*/
+.portfolio .portfoliofilter a.current .filterbutton {
+  background: #418eea;
+  border: 1px solid #418eea;
+}
+.portfolio .portfoliofilter a:hover .filterbutton {
+  color: #418eea;
+  border: 1px solid #418eea;
+}
+.portfolio .portfoliocontent .content .overlay:hover {
+  background: rgba(65, 142, 234, 0.9);
+}
+/*==========================================*/
+/*             Why Me Elements
+/*==========================================*/
+.why-me .skills .skillbars .bar-container .meter {
+  background: #418eea;
+}
+.why-me .skills .skillbars .bar-container .meter:after {
+  border-left: 20px solid #418eea;
+}
+/*==========================================*/
+/*      Education & Employment Elements
+/*==========================================*/
+.timeline > li .timeline-icon {
+  background: #418eea;
+}
+.timeline > li .timeline-label .place {
+  color: #418eea;
+}
+/*==========================================*/
+/*        Pricing Elements
+/*==========================================*/
+.pricing .pricing-table .price {
+  background: #418eea;
+}
+.pricing .pricing-table .list .def-btn {
+  border: 1px solid #418eea;
+  border-color: #418eea;
+  color: #418eea;
+}
+.pricing .pricing-table .list .def-btn:hover {
+  background: #418eea;
+}
+/*==========================================*/
+/*            Journal Elements
+/*==========================================*/
+.journal .journal-content .media .quote {
+  background: #418eea;
+}
+.journal .journal-content .detail {
+  border-top: 5px solid #418eea;
+}
+.journal .journal-content .detail .category {
+  background: #418eea;
+}
+.journal .journal-content .detail .title h3 {
+  color: #418eea;
+}
+.journal .journal-content .detail .title h3:hover {
+  color: #87cef7;
+}
+.journal .journal-content .detail .info a:hover {
+  color: #418eea;
+}
+/*==========================================*/
+/*             Map Elements
+/*==========================================*/
+.map .map-title {
+  background: #418eea;
+}
+/*==========================================*/
+/*             Contact Elements
+/*==========================================*/
+.contact #success_page {
+  border: 1px solid #418eea;
+}
+.contact #success_page h3 {
+  color: #418eea;
+}
+.contact .error_message {
+  border: 1px solid #418eea;
+}
+.contact .footer-form .input-container .form-control:focus {
+  border: 1px solid #418eea;
+}
+.contact .footer-form .textarea-container textarea:focus {
+  border: 1px solid #418eea;
+}
+.contact .footer-form .button-container .def-btn {
+  border: 1px solid #418eea;
+  color: #418eea;
+}
+.contact .footer-form .button-container .def-btn:hover {
+  background: #418eea;
+}
+/*==========================================*/
+/*            Footer Elements
+/*==========================================*/
+.footer {
+  border-top: 5px solid #418eea;
+}
+.footer .top-text {
+  background: #418eea;
+}
+.footer .links .social-icons .circle {
+  border: 1px solid #418eea;
+}
+.footer .links .social-icons .circle .fa {
+  color: #418eea;
+}
+.footer .links .social-icons .circle:hover {
+  background: #418eea;
+}
+/*==========================================*/
+/*         Portfolio Single Elements
+/*==========================================*/
+.portfolio-single .carousel .carousel-control .control-button:hover {
+  background: #418eea;
+}
+.portfolio-single .description .def-btn:hover {
+  background: #418eea;
+}
+/*==========================================*/
+/*          Journal List Elements
+/*==========================================*/
+.journal-list .top-search .search-wrap input:focus {
+  border-color: #418eea;
+}
+.journal-list .journal-content .detail {
+  border-top: 5px solid #418eea;
+}
+.journal-list .journal-content .detail .category {
+  background: #418eea;
+}
+.journal-list .journal-content .detail .title h3 {
+  color: #418eea;
+}
+.journal-list .journal-content .detail .title h3:hover {
+  color: #87cef7;
+}
+.journal-list .journal-content .detail .info a:hover {
+  color: #418eea;
+}
+/*==========================================*/
+/*          Journal Single Elements
+/*==========================================*/
+.journal-detail .post-single .respond .row .form-control:focus {
+  border: 1px solid #418eea;
+}
+.journal-detail .post-single .respond .row textarea:focus {
+  border: 1px solid #418eea;
+}
+.journal-detail .post-single .respond .row .def-btn:hover {
+  background: #418eea;
+}
+.journal-sidebar .title .shape {
+  background: #418eea;
+}
+.journal-sidebar .content ul li:hover {
+  border-bottom: 1px solid #418eea;
+}
+.journal-sidebar .content ul li:hover a {
+  color: #418eea;
+}
+.journal-sidebar .search-post .content .search-wrap input:focus {
+  border-color: #418eea;
+}
+.journal-sidebar .recent-post .content ul li span {
+  color: #418eea;
+}
+.journal-sidebar .post-tags .tag-label:hover {
+  background: #418eea;
+  border: 2px solid #418eea;
+}
+/*==========================================*/
+/*          Responsive Settings
+/*==========================================*/
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-toggle {
+    border: 1px solid #418eea;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  }
+  .navbar-inverse .navbar-toggle span.icon-bar {
+    background: #418eea;
+  }
+  .navbar-inverse .navbar-toggle:focus,
+  .navbar-inverse .navbar-toggle:hover {
+    background: #418eea;
+  }
+  .navbar-inverse .navbar-collapse ul.navbar-nav li.active {
+    color: #418eea;
+  }
+  .navbar-inverse .navbar-collapse ul.navbar-nav li a:hover {
+    background: #418eea;
+  }
+}
