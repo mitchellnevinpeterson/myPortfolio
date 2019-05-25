@@ -32,10 +32,12 @@ $(document).ready(function() {
   $(window).scroll(function(){  
     "use strict"; 
     var scroll = $(window).scrollTop();
-    if( scroll > 60 ){
+    if( scroll > 65 ){
       $(".navbar").addClass("scroll-fixed-navbar");
+      $(".navbar-header").removeClass("inverse-nav");
     } else {
       $(".navbar").removeClass("scroll-fixed-navbar");
+      $(".navbar-header").addClass("inverse-nav");
     }
   });
 
@@ -50,15 +52,23 @@ $(document).ready(function() {
 
   // -------------- Parallax -------------- 
   
-  if( window_width > 992 ){
+  if( window_width > 100 ){
+    $('.banner').parallax("50%", 0.1);
     $('.testimonial').parallax("50%", 0.1);
     $('.counter').parallax("50%", 0.1);
     $('.twitter-feed').parallax("50%", 0.1);
   }
 
   // -------------- Scroll to content animation -------------- 
-
+  // For top navbar
   $(".navbar-nav li a[href^='#']").on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $(this.hash).offset().top-60
+    }, 1000);
+  });
+  // For about me section clicking on "send me a message"
+  $(".more ul li a[href^='#']").on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({
         scrollTop: $(this.hash).offset().top-60
