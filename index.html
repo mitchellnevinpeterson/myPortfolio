@@ -81,7 +81,7 @@
 
     <!-- Banner Section Begin -->
     <canvas></canvas>
-    <section class="banner absolute-center" id="home" style="background: url(assets/images/topBackground.png) center; background-size: cover;">
+    <section class="banner absolute-center" id="home">
       <div class="overlay"></div>
       <div class="banner-content">
         <div class="container">
@@ -96,7 +96,7 @@
               <a href="https://www.linkedin.com/in/mitchell-peterson-28508a158/" target="_blank" class="def-btn">Linkedin Profile</a>
             </div>
             <div class="buttons">
-              <a href="MitchResume2018.pdf" download class="def-btn">Download Resume</a>
+              <a href="assets/MitchResume2018.pdf" download class="def-btn">Download Resume</a>
             </div>
           </div>
         </div><!-- /.container -->
@@ -161,7 +161,7 @@
     <!-- About section End -->
     
     <!-- Counter Section Begin-->
-    <section class="counter" style="background: url(assets/images/bookCase.jpg) center; background-size: cover; background-attachment: fixed;">
+    <section class="counter" id="counter">
       <div class="overlay"></div>
       <div class="container content">
         <div class="row">
@@ -314,21 +314,21 @@
           </div><!--/.item -->
 
           <div class="item col-md-4 col-sm-6 col-xs-12 webdevelopment">
-            <a href="portfolio-single.html" target="_blank">
+            <a href="https://mitchellnevinpeterson.github.io/week16exercise/" target="_blank">
               <div class="content">
                 <div class="overlay valign-container">
                   <div class="valign-container">
                     <div class="text valign-content">
-                      <span class="project-name">Nice Shirt Design</span>
+                      <span class="project-name">Single Page Application</span>
                       <div class="separator-container">
                         <div class="separator"><div class="shape"></div></div>
                       </div>
-                      <span class="project-date">2 Mar 2015</span>
+                      <span class="project-date">20 May 2019</span>
                     </div>
                   </div>
                 </div>
                 <div class="image">
-                  <img src="assets/images/work6.jpg" alt="Portfolio image">
+                  <img src="assets/images/singlePageApp.jpeg" alt="Portfolio image">
                 </div>
               </div><!--/.content -->
             </a>
@@ -348,7 +348,7 @@
     <!-- Portfolio Section End -->
 
     <!-- Testimonial Section Begin-->
-    <section class="testimonial text-center" id="testimonial" style="background: url(assets/images/typeWriter.jpg) center; background-size: cover; background-attachment: fixed;">
+    <section class="testimonial text-center" id="testimonial">
       <div class="overlay"></div>
       <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
         <div class="container">
@@ -931,7 +931,7 @@
         <div class="col-md-8 col-md-offset-2">
           <div class="footer-form">
             <div id="notification"></div>
-            <form role="form" method="post" action="contact.php" id="contactform">
+            <form role="form" method="post" action="assets/contact.php" id="contactform">
               <div class="col-md-12 input-container wow animated fadeInUp" data-wow-delay="0.2s">
                 <input type="text" name="name" id="name" class="form-control" placeholder="Name">
               </div>
@@ -1017,6 +1017,8 @@
     <script src="assets/javascripts/masonry.pkgd.min.js"></script>
     <script src="assets/javascripts/custom-map.js"></script>
     <script src="assets/javascripts/custom.js"></script>
+    <!-- PHP -->
+    <?php include 'contact.php';?>
 
   </body>
 </html>

@@ -1,8 +1,8 @@
 /*==========================================*/
 /* CSS Document */
 /*
-	Theme Name: MePro 
-	Description: MePro - Responsive One Page Template
+  Theme Name: MePro 
+  Description: MePro - Responsive One Page Template
 */
 /* ------------------------------------------ */
 /*             TABLE OF CONTENTS
@@ -40,6 +40,7 @@ body {
   font-weight: 300;
   color: #333333;
   position: relative;
+  -webkit-overflow-scrolling: touch;
 }
 html h1,
 body h1,
@@ -197,35 +198,29 @@ button {
 }
 .isotope {
   -webkit-transition-property: height, width;
-  -moz-transition-property: height, width;
-  -ms-transition-property: height, width;
   -o-transition-property: height, width;
   transition-property: height, width;
 }
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
-  -moz-transition-property: -moz-transform, opacity;
-  -ms-transition-property: -ms-transform, opacity;
   -o-transition-property: -o-transform, opacity;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  -o-transition-property: transform, opacity;
   transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
 }
 .isotope .isotope-item.no-transition {
-  -moz-transition-duration: 0s;
-  -ms-transition-duration: 0s;
   -o-transition-duration: 0s;
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
 }
 .isotope.no-transition {
-  -moz-transition-duration: 0s;
-  -ms-transition-duration: 0s;
   -o-transition-duration: 0s;
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
 }
 .isotope.no-transition .isotope-item {
-  -moz-transition-duration: 0s;
-  -ms-transition-duration: 0s;
   -o-transition-duration: 0s;
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
@@ -438,7 +433,7 @@ button {
   margin-bottom: 0px;
   z-index: 3;
   -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-  -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
 .navbar-inverse .navbar-brand {
@@ -480,7 +475,6 @@ button {
 .navbar-inverse.scroll-fixed-navbar {
   background: #fff;
   -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
   color: #333333;
   height: 95px;
@@ -498,13 +492,31 @@ button {
 /*       03 - Banner Elements
 /*==========================================*/
 
+#home{
+  background: url(../../images/topBackground.png) center;
+  background-size: cover;
+}
+#counter {
+  background: url(../../images/bookBindings.jpg) center;
+  background-size: cover; 
+  background-attachment: fixed;
+}
+#testimonial {
+  background: url(../../images/typeWriter.jpg) center; 
+  background-size: cover; 
+  background-attachment: fixed;
+}
 section.absolute-center {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     opacity: 1;
     visibility: visible;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 section.banner {
@@ -515,8 +527,9 @@ section.banner {
   margin: 0;
   padding: 0;
   background: #1f263b;
-  background: -moz-linear-gradient(top, #1f263b 0%, #2c3654 100%);
   background: -webkit-linear-gradient(top, #1f263b 0%,#2c3654 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1f263b),to(#2c3654));
+  background: -o-linear-gradient(top, #1f263b 0%,#2c3654 100%);
   background: linear-gradient(to bottom, #1f263b 0%,#2c3654 100%);
 }
 .banner {
@@ -1107,22 +1120,27 @@ section.banner {
   top: 50%;
 }
 .portfolio .portfoliocontent a:hover .image {
-  transform: rotate(10deg) scale(1.3);
+  -ms-transform: rotate(10deg) scale(1.3);
+      transform: rotate(10deg) scale(1.3);
   -webkit-transform: rotate(10deg) scale(1.3);
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
 }
 .portfolio .portfoliocontent a:hover .content .text::before {
   -webkit-transform: scale(1);
   opacity: 1;
-  transform: scale(1);
+  -ms-transform: scale(1);
+      transform: scale(1);
 }
 .portfolio .portfoliocontent a:hover .content .text::after {
   -webkit-transform: scale(1);
   -webkit-transition-delay: 0.15s;
   opacity: 1;
-  transform: scale(1);
-  transition-delay: 0.15s;
+  -ms-transform: scale(1);
+      transform: scale(1);
+  -o-transition-delay: 0.15s;
+     transition-delay: 0.15s;
 }
 .portfolio .portfoliocontent .item {
   margin-bottom: 30px;
@@ -1170,9 +1188,14 @@ section.banner {
   position: absolute;
   right: 30px;
   top: 50px;
-  transform-origin: 0 0;
-  transform: scale(0, 1);
+  -ms-transform-origin: 0 0;
+      transform-origin: 0 0;
+  -ms-transform: scale(0, 1);
+      transform: scale(0, 1);
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  -o-transition: opacity 0.35s, transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 .portfolio .portfoliocontent .content .overlay .text::after {
   -webkit-transform-origin: 100% 0;
@@ -1187,9 +1210,14 @@ section.banner {
   position: absolute;
   right: 50px;
   top: 30px;
-  transform-origin: 100% 0;
-  transform: scale(1, 0);
+  -ms-transform-origin: 100% 0;
+      transform-origin: 100% 0;
+  -ms-transform: scale(1, 0);
+      transform: scale(1, 0);
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  -o-transition: opacity 0.35s, transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 .portfolio .portfoliocontent .content .overlay .text .project-name {
   color: #ffffff;
@@ -1429,7 +1457,6 @@ section.banner {
 .pricing .pricing-table {
   background: #ffffff;
   -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   margin-top: 15px;
@@ -1799,7 +1826,8 @@ section.banner {
 }
 .contact .footer-form .input-container .form-control {
   border: 1px solid #ccc;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   -moz-box-shadow: none;
   color: #333333;
   padding: 25px 20px;
@@ -1820,7 +1848,8 @@ section.banner {
 .contact .footer-form .textarea-container textarea {
   height: 120px;
   border: 1px solid #ccc;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   -moz-box-shadow: none;
   color: #333333;
   padding: 10px 20px;
@@ -2172,7 +2201,8 @@ section.banner {
 .journal-list .top-search .search-wrap input {
   padding: 10px;
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   height: auto;
   border-width: 1px;
   position: relative;
@@ -2619,7 +2649,8 @@ section.banner {
 .journal-sidebar .search-post .content .search-wrap input {
   padding: 10px;
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   height: auto;
   border-width: 1px;
   width: 100%;
@@ -2693,6 +2724,10 @@ section.banner {
   .carousel-control {
     min-height: 697px!important;
   }
+  #testimonial,
+  #counter {
+    background-size: contain;
+  }
 }
 @media (max-width: 1024px) {
   .timeline > li .timeline-year span:last-child {
@@ -2725,10 +2760,19 @@ section.banner {
   }
 }
 @media (max-width: 767px) {
+  #testimonial,
+  #counter {
+    background-size: cover;
+  }
+  #counter {
+    background: url(../../images/bookBindings90.jpg) center;
+  }
+  #testimonial {
+    background: url(../../images/typeWriter90.jpg) center;
+  }
   .navbar-inverse {
     background: transparent;
     -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
   }
   .navbar-inverse .navbar-toggle {

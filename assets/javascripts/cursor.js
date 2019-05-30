@@ -120,7 +120,20 @@ update();
 
 /*REAJUST CANVAS AFTER RESIZE*/
 
-window.onresize = function() {
+// creating a variable to use to insure a true window resize on mobile devices
+var width = window.innerWidth;
+
+// checking for a window resize event
+window.addEventListener("resize", reload);
+function reload() {
+  // if the width of the window has actually changed then reload page
+  if(window.innerWidth != width) {
     location.reload();
+    };
 };
+
+
+// window.onresize = function() {
+//     location.reload();
+// };
 
