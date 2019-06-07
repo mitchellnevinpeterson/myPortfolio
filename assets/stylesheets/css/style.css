@@ -76,7 +76,7 @@ p {
   line-height: 2.8rem;
 }
 button {
-  z-index: 9999;
+  z-index: 999;
 }
 .container-medium {
   padding-right: 15px;
@@ -420,10 +420,17 @@ button {
 
 .navbar {
   border: 0;
+  z-index: 9999!important;
 }
 
 .navbar-collapse {
   text-align: right;
+}
+.navbar-toggle {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  margin: 15px!important;
 }
 .navbar-inverse {
   height: 13vh;
@@ -448,7 +455,7 @@ button {
 }
 .navbar-inverse .navbar-nav li a {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 1.75rem;
   text-transform: uppercase;
   font-weight: 400;
   padding: 30px 20px;
@@ -488,6 +495,82 @@ button {
   color: #333333;
   padding: 30px 20px;
 }
+/*==========================================*/
+/*        Dynamic Hamburger Menu
+/*==========================================*/
+#nav-icon1 {
+  width: 4rem;
+  height: 2rem;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  /*margin: 0 auto;*/
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span {
+  display: inline-block;
+  position: absolute;
+  height: .5rem;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  right: 10;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 12px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 24px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 12px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 12px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
 /*==========================================*/
 /*       03 - Banner Elements
 /*==========================================*/
@@ -1443,7 +1526,7 @@ section.banner {
 /*==========================================*/
 /*        12 - Pricing Elements
 /*==========================================*/
-.pricing {
+/*.pricing {
   padding: 80px 0px;
   background: #eee;
 }
@@ -1531,11 +1614,11 @@ section.banner {
 }
 .pricing .pricing-table .list .def-btn:hover {
   color: #ffffff;
-}
+}*/
 /*==========================================*/
 /*        12 - Twitter Feed Elements
 /*==========================================*/
-.twitter-feed {
+/*.twitter-feed {
   position: relative;
   text-align: center;
 }
@@ -1592,11 +1675,11 @@ section.banner {
 .twitter-feed .time a {
   font-weight: 600;
   color: #ffffff;
-}
+}*/
 /*==========================================*/
 /*        13 - Journal Elements
 /*==========================================*/
-.journal {
+/*.journal {
   padding: 80px 0px 60px;
   border-bottom: 2px solid #eee;
 }
@@ -1733,11 +1816,11 @@ section.banner {
 }
 .journal .show-more a {
   background: #f0f0f0;
-}
+}*/
 /*==========================================*/
 /*        14 - Clients Elements
 /*==========================================*/
-.clients {
+/*.clients {
   padding: 80px 0px;
 }
 .clients .title h1 {
@@ -1772,7 +1855,7 @@ section.banner {
   opacity: 1;
   -webkit-opacity: 1;
   -moz-opacity: 1;
-}
+}*/
 /*==========================================*/
 /*        15 - Map Elements
 /*==========================================*/
@@ -1948,7 +2031,7 @@ section.banner {
 /*==========================================*/
 /*       18 - Portfolio list Elements
 /*==========================================*/
-.portfolio-list {
+/*.portfolio-list {
   padding: 0px 0px 0px;
 }
 .portfolio-list .title {
@@ -1966,11 +2049,11 @@ section.banner {
 }
 .portfolio-list .pagination-wrap {
   padding-bottom: 40px;
-}
+}*/
 /*==========================================*/
 /*       19 - Portfolio Single Elements
 /*==========================================*/
-.portfolio-single .portfolio-category {
+/*.portfolio-single .portfolio-category {
   display: block;
   padding: 15px 0px 10px;
 }
@@ -2178,11 +2261,11 @@ section.banner {
 }
 .portfolio-single .related-project .next-project .def-btn {
   margin-left: 30px;
-}
+}*/
 /*==========================================*/
 /*       20 - Journal List Elements
 /*==========================================*/
-.journal-list .title {
+/*.journal-list .title {
   padding: 40px 0px;
   background: #ffffff;
 }
@@ -2350,11 +2433,11 @@ section.banner {
   padding-top: 10px;
   margin-top: 10px;
   font-size: 12px;
-}
+}*/
 /*==========================================*/
 /*       21 - Journal Single Elements
 /*==========================================*/
-.journal-single .title {
+/*.journal-single .title {
   padding: 40px 0px;
 }
 .journal-single .title h1 {
@@ -2705,7 +2788,7 @@ section.banner {
 }
 .journal-sidebar .post-tags .tag-label:hover {
   color: #ffffff;
-}
+}*/
 /*==========================================*/
 /*       22 - Responsive Settings
 /*==========================================*/

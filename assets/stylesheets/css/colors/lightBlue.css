@@ -267,7 +267,7 @@ a:hover {
 /*==========================================*/
 @media (max-width: 767px) {
   .navbar-inverse .navbar-toggle {
-    border: 1px solid #418eea;
+    border: 0;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -278,7 +278,7 @@ a:hover {
   }
   .navbar-inverse .navbar-toggle:focus,
   .navbar-inverse .navbar-toggle:hover {
-    background: #418eea;
+    background: transparent;
   }
   .navbar-inverse .navbar-collapse ul.navbar-nav li.active {
     color: #418eea;

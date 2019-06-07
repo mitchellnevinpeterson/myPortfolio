@@ -98,17 +98,17 @@ $(document).ready(function() {
 
   // -------------- Owl Carousel -------------- 
 
-  var owl = $("#clients");
+  // var owl = $("#clients");
  
-  owl.owlCarousel({
-    items : 5,
-    itemsDesktop : [1000,5],
-    itemsDesktopSmall : [900,3],
-    itemsTablet: [600,2],
-    itemsMobile : [400,1], 
-    pagination: false,
-    autoPlay : 3000
-  });
+  // owl.owlCarousel({
+  //   items : 5,
+  //   itemsDesktop : [1000,5],
+  //   itemsDesktopSmall : [900,3],
+  //   itemsTablet: [600,2],
+  //   itemsMobile : [400,1], 
+  //   pagination: false,
+  //   autoPlay : 3000
+  // });
 
   // -------------- Slick -------------- 
 
@@ -184,3 +184,13 @@ $(window).load(function(){
   });
 
 });
+
+// ---------------------------------------
+// Dynamic hamburger Icon for navigation
+// ---------------------------------------
+$(document).ready(function(){
+  // making the dynamic hamburger open and close when user clicks on the navbar
+  $('#smallNavDrop, #navCollapse').click(function(){
+    $('#nav-icon1').toggleClass('open')
+  })
+})
